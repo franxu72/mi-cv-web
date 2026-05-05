@@ -1,0 +1,260 @@
+
+h1 {color: green;
+    text-align: center;
+    background-color: hsl(153, 100%, 50%);}
+
+body {background-color: rgb(0, 0, 255, 0.5);
+      background-image: url(profee.jpeg);
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-attachment: scroll;
+      margin-right: 300px;}
+
+p.dotted {
+    border-style: dotted ;
+    text-align-last: right;
+    text-decoration: line-through;
+}
+
+p.dashed {
+    border-style: dashed ;
+    border-width: 10px 10px 10px 10px;
+    border-color: #53ff11;
+    font-style: italic;
+
+}
+
+p.solid {
+    border-style: solid ;
+    color: rgb(255, 255, 255);
+    line-height: 5;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+}
+
+p.double {
+    border-style: double;
+    border: 15px solid green;
+    height: 100px;
+    width: 300px;
+    background-color: rgb(160, 160, 160);
+    padding: 50px;
+    margin: 20px;
+    text-align: left;
+    text-decoration: overline underline;
+    text-decoration-color: red ;
+}
+
+p.groove {
+    border-style: groove ;
+    padding-top: 100px;
+    text-align: justify;
+    text-decoration: underline red double 5px;
+    text-transform: lowercase;
+}
+
+p.ridge {
+    border: 2px red ridge;
+    padding: 10px;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px red;
+}
+
+p.inset {
+    text-transform: uppercase;
+    text-indent: 50px;
+    letter-spacing: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a:hover {
+    color: hotpink;
+    background-color: #53ff11;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+
+li a:hover {
+  background-color: #555555;
+  color: white;
+}
+
+table, th, td  {
+
+    border: 8px solid red;
+    border-collapse: separate;
+    border-spacing: 15px;
+    padding: 10px;
+}
+
+table {
+
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    height: 70%;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #38444d;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+label {display: block;}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.responsive-form {
+  max-width: 600px;
+  width: 100%;
+  border-radius: 4px;
+  border: 2px solid #04AA6D;;
+  background-color:  #f2f2f2;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+label {
+  min-width: 48%;
+  margin-bottom: 10px;
+}
+
+input[type=text], select {
+  min-width: 45%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+textarea {
+  min-width: 45%;
+  height: 150px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  label,
+  input[type=text],
+  input[type=submit],
+  select, textarea {
+    flex: 100%;
+    min-width: 100%;
+  }
+}
